@@ -1,1 +1,33 @@
+@import "tailwindcss";
 
+:root {
+  --background: #07111f;
+  --foreground: #edf6ff;
+  --muted: #9db0c7;
+  --surface: rgb(11 27 47 / 72%);
+  --surface-border: rgb(183 220 255 / 18%);
+  --accent: #66e3ff;
+  --accent-strong: #8b7cff;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--background); }
+body { margin: 0; min-width: 320px; background: var(--background); color: var(--foreground); font-family: Arial, Helvetica, sans-serif; }
+button, a { font: inherit; }
+
+.foundation-shell { isolation: isolate; display: grid; min-height: 100svh; place-items: center; overflow: hidden; padding: 1.5rem; position: relative; }
+.foundation-card { width: min(100%, 42rem); border: 1px solid var(--surface-border); border-radius: 1.5rem; background: linear-gradient(145deg, rgb(20 45 73 / 88%), var(--surface)); box-shadow: 0 24px 80px rgb(0 0 0 / 35%), inset 0 1px rgb(255 255 255 / 8%); backdrop-filter: blur(20px); padding: clamp(1.5rem, 5vw, 3rem); position: relative; z-index: 1; }
+.foundation-brand, .foundation-eyebrow, .foundation-footer { display: flex; align-items: center; gap: .625rem; }
+.foundation-brand { font-weight: 700; letter-spacing: .02em; }
+.foundation-mark { display: grid; place-items: center; height: 2rem; width: 2rem; border-radius: .625rem; color: #05101f; background: linear-gradient(135deg, var(--accent), #b6f5ff); }
+.foundation-content { padding: clamp(3.5rem, 11vw, 6rem) 0; }
+.foundation-eyebrow { color: var(--accent); font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.foundation-content h1 { max-width: 12ch; margin: .85rem 0; font-size: clamp(2.5rem, 7vw, 4.75rem); line-height: .98; letter-spacing: -.065em; }
+.foundation-copy { max-width: 36rem; margin: 0; color: var(--muted); font-size: clamp(1rem, 2vw, 1.125rem); line-height: 1.65; }
+.foundation-footer { justify-content: space-between; color: var(--muted); font-size: .875rem; }
+.foundation-orb { position: absolute; z-index: -1; width: 34rem; height: 34rem; border-radius: 999px; filter: blur(24px); opacity: .38; }
+.foundation-orb--one { background: #147ea7; top: -17rem; left: -14rem; }
+.foundation-orb--two { background: #43349f; bottom: -20rem; right: -15rem; }
+.route-state { display: grid; min-height: 100svh; place-content: center; gap: 1rem; padding: 2rem; text-align: center; }
+.route-state h1, .route-state p { margin: 0; }
+.route-state a, .route-state button { color: var(--accent); background: none; border: 0; cursor: pointer; text-decoration: underline; }
