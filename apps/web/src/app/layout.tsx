@@ -9,7 +9,15 @@ export const metadata: Metadata = {
     template: "%s | Drone404",
   },
   description:
-    "Drone-powered last-mile delivery and intelligent commerce platform.",
+    "Intelligent drone-powered last-mile delivery and commerce platform.",
+  applicationName: "Drone404",
+  keywords: [
+    "Drone404",
+    "SkyNav",
+    "drone delivery",
+    "last-mile delivery",
+    "UAV delivery",
+  ],
 };
 
 export default function RootLayout({
