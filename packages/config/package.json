@@ -1,0 +1,22 @@
+{
+  "name": "@drone404/config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./eslint": "./eslint/index.js",
+    "./typescript": "./typescript/base.json",
+    "./prettier": "./prettier/index.mjs"
+  },
+  "scripts": {
+    "build": "echo Config package does not require a build step",
+    "lint": "echo Config package does not require a lint step",
+    "typecheck": "echo Config package does not require a typecheck step",
+    "clean": "echo Config package does not require a clean step"
+  },
+  "devDependencies": {
+    "eslint": "^9.35.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2"
+  }
+}
