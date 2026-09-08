@@ -17,9 +17,13 @@
     "@drone404/maps": "workspace:*",
     "@drone404/types": "workspace:*",
     "@drone404/ui": "workspace:*",
+    "clsx": "^2.1.1",
+    "framer-motion": "^13.2.0",
+    "lucide-react": "^1.42.0",
     "next": "^15.5.2",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^15.5.2",
